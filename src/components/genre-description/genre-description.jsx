@@ -3,7 +3,7 @@ import AlbumFetch from '../albums/album.fetching';
 import Artist  from '../artists/artist.component';
 import Track  from '../tracks/track.component';
 import './genre-description.component.css';
-import {Album} from '../albums/album.component';
+// import {Album} from '../albums/album.component';
 
  
 class Des extends Component {
@@ -11,9 +11,13 @@ class Des extends Component {
     super();
     this.state={
       description :'',
-      isToggleOn: false
+      isToggleOn: false,
+      isClicked: false,
+      isPressed:false
     };
     this.handleClick = this.handleClick.bind(this);
+    this.pressedClick = this.pressedClick.bind(this);
+    this.isClick = this.isClick.bind(this);
    
   }
 
@@ -21,6 +25,20 @@ class Des extends Component {
     this.setState(state => (
       {
         isToggleOn: !state.isToggleOn
+      }
+    ));
+  }
+  pressedClick(){
+    this.setState(state => (
+      {
+        isClicked: !state.isClicked
+      }
+    ));
+  }
+  isClick(){
+    this.setState(state => (
+      {
+        isPressed: !state.isPressed
       }
     ));
   }
@@ -39,15 +57,12 @@ class Des extends Component {
       <div className="App">
       <h1 className="text-transform">{this.props.match.params.name}</h1>
       <h3 className="genre-dedscription">{this.state.description}</h3>
-      <button className="tabs-button" onClick={this.handleClick}>NewLink</button>
-      {this.state.isToggleOn? <Album /> : null}
-
-
-      <AlbumFetch >{this.props.match.params.name}</AlbumFetch>
-      <Track>{this.props.match.params.name}</Track>
-      <Artist>{this.props.match.params.name}</Artist>
-      
-      
+      <button className="tabs-button" onClick={this.handleClick}>Albums</button>
+      {this.state.isToggleOn? <AlbumFetch >{this.props.match.params.name}</AlbumFetch>:null}
+      <button className="tabs-button" onClick={this.pressedClick}>Tracks</button>
+      {this.state.isClicked? <Track>{this.props.match.params.name}</Track>:null}
+      <button className="tabs-button" onClick={this.isClick}>Artists</button>
+      {this.state.isPressed? <Artist>{this.props.match.params.name}</Artist>:null}
       </div>
       
     );

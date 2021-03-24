@@ -1,0 +1,27 @@
+.genre-tags {
+    display: inline-block;
+    min-width: 24%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    border: solid #000 1px;
+    box-sizing: border-box;
+    padding: 4px 0px;
+    border-radius: 10px;
+}
+
+.genre-link {
+    width: 80%;
+    font-size: 13px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000;
+    font-style: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    font-weight: 700;
+}

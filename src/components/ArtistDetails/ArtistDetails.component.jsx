@@ -13,11 +13,11 @@ class ArtistDetails extends Component{
       }
       
       componentDidMount(props) {
-        Promise.all([fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${this.props.match.params.name}&api_key=afd5ef428b7d104bd4ccdc3146c59390&format=json`)
+        Promise.all([fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${this.props.match.params.name}&api_key=afd5ef428b7d104bd4ccdc3146c59390&format=json`)
         .then(response =>response.json()),
-        fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${this.props.match.params.name}&api_key=afd5ef428b7d104bd4ccdc3146c59390&format=json`)
+        fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${this.props.match.params.name}&api_key=afd5ef428b7d104bd4ccdc3146c59390&format=json`)
         .then(response =>response.json()),
-        fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${this.props.match.params.name}&api_key=afd5ef428b7d104bd4ccdc3146c59390&format=json`)
+        fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${this.props.match.params.name}&api_key=afd5ef428b7d104bd4ccdc3146c59390&format=json`)
         .then(response =>response.json())])
        
         .then(([users,items,names]) => {

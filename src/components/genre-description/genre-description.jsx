@@ -45,7 +45,7 @@ class Des extends Component {
   }
 
  componentDidMount() {
-    fetch(`http://ws.audioscrobbler.com/2.0/?method=tag.getinfo&tag=${this.props.match.params.name}&api_key=afd5ef428b7d104bd4ccdc3146c59390&format=json`)
+    fetch(`https://ws.audioscrobbler.com/2.0/?method=tag.getinfo&tag=${this.props.match.params.name}&api_key=afd5ef428b7d104bd4ccdc3146c59390&format=json`)
     .then(response =>response.json())
     .then(users => this.setState({description:users.tag.wiki.summary}));
   }

@@ -11,7 +11,7 @@ class AlbumDetails extends Component {
     }
   
    componentDidMount() {
-    fetch(`http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=afd5ef428b7d104bd4ccdc3146c59390&artist=${this.props.match.params.id}&album=${this.props.match.params.name}&format=json`)
+    fetch(`https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=afd5ef428b7d104bd4ccdc3146c59390&artist=${this.props.match.params.id}&album=${this.props.match.params.name}&format=json`)
     .then(response =>response.json())
     .then(users => this.setState({data:users.album}));
       

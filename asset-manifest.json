@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Himanshu-180875/musicwiki/static/css/main.b7f199c6.chunk.css",
-    "main.js": "/Himanshu-180875/musicwiki/static/js/main.d0194425.chunk.js",
-    "main.js.map": "/Himanshu-180875/musicwiki/static/js/main.d0194425.chunk.js.map",
-    "runtime-main.js": "/Himanshu-180875/musicwiki/static/js/runtime-main.0c893ee7.js",
-    "runtime-main.js.map": "/Himanshu-180875/musicwiki/static/js/runtime-main.0c893ee7.js.map",
-    "static/js/2.aaa7a61e.chunk.js": "/Himanshu-180875/musicwiki/static/js/2.aaa7a61e.chunk.js",
-    "static/js/2.aaa7a61e.chunk.js.map": "/Himanshu-180875/musicwiki/static/js/2.aaa7a61e.chunk.js.map",
-    "static/js/3.0502da94.chunk.js": "/Himanshu-180875/musicwiki/static/js/3.0502da94.chunk.js",
-    "static/js/3.0502da94.chunk.js.map": "/Himanshu-180875/musicwiki/static/js/3.0502da94.chunk.js.map",
-    "index.html": "/Himanshu-180875/musicwiki/index.html",
-    "static/css/main.b7f199c6.chunk.css.map": "/Himanshu-180875/musicwiki/static/css/main.b7f199c6.chunk.css.map",
-    "static/js/2.aaa7a61e.chunk.js.LICENSE.txt": "/Himanshu-180875/musicwiki/static/js/2.aaa7a61e.chunk.js.LICENSE.txt"
+    "main.css": "/musicwiki/static/css/main.b7f199c6.chunk.css",
+    "main.js": "/musicwiki/static/js/main.d0194425.chunk.js",
+    "main.js.map": "/musicwiki/static/js/main.d0194425.chunk.js.map",
+    "runtime-main.js": "/musicwiki/static/js/runtime-main.20b9ae9b.js",
+    "runtime-main.js.map": "/musicwiki/static/js/runtime-main.20b9ae9b.js.map",
+    "static/js/2.aaa7a61e.chunk.js": "/musicwiki/static/js/2.aaa7a61e.chunk.js",
+    "static/js/2.aaa7a61e.chunk.js.map": "/musicwiki/static/js/2.aaa7a61e.chunk.js.map",
+    "static/js/3.0502da94.chunk.js": "/musicwiki/static/js/3.0502da94.chunk.js",
+    "static/js/3.0502da94.chunk.js.map": "/musicwiki/static/js/3.0502da94.chunk.js.map",
+    "index.html": "/musicwiki/index.html",
+    "static/css/main.b7f199c6.chunk.css.map": "/musicwiki/static/css/main.b7f199c6.chunk.css.map",
+    "static/js/2.aaa7a61e.chunk.js.LICENSE.txt": "/musicwiki/static/js/2.aaa7a61e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0c893ee7.js",
+    "static/js/runtime-main.20b9ae9b.js",
     "static/js/2.aaa7a61e.chunk.js",
     "static/css/main.b7f199c6.chunk.css",
     "static/js/main.d0194425.chunk.js"

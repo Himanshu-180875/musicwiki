@@ -1,5 +1,6 @@
 import React,{ Component } from 'react'; 
 import {Album}  from './album.component';
+import {Link} from 'react-router-dom';
 import './albums.component.css';
 import './../../App.css';
 class AlbumFetch extends Component {
@@ -29,10 +30,10 @@ componentDidMount(props) {
         <div>
         
         {this.state.albums.map(item =>
-            <div class="card-item">
+          <div class="card-item">
             <img className="card-image" src={item.image[3]["#text"]}/>
             <div className="card-middle">
-              <div class="card-text">{item.name}</div>
+              <div class="card-text"><Link to={`/album/${item.name}/${item.artist.name}`}>{item.name}</Link></div>
             </div>
           </div>  
       )}

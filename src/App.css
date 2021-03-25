@@ -89,3 +89,72 @@
   align-items: center;
   justify-content: center;
 }
+
+.card-text a{
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.back-button {
+  background-color: transparent;
+    border-style: none;
+    color: #878788;
+    position: absolute;
+    font-size: 32px;
+    display: flex;
+}
+
+.description {
+  padding: 15px;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+}
+
+.inline-card-wrapper, .tags-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-left: 0px;
+  margin-left: 15px;
+}
+
+.inline-card-wrapper .card-item, .tags-wrapper-item {
+  flex: 0 0 auto;
+}
+
+.inline-card-wrapper .card-item .genre-link{
+  color: #fff;
+  font-size: 18px;
+}
+
+.tabs-button {
+  text-transform: uppercase;
+  background-color: transparent;
+  border-style: none;
+  padding: 12px 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* .tabs-button.active{
+  border-bottom: solid #444444 1px;
+} */
+
+.tabs-button:active, .tabs-button:focus {
+  border-style: none;
+  outline: 0;
+  border-bottom: solid #444444 1px;
+}
+
+.expand-icon {
+  font-size: 20px;
+    border: solid 1px #000;
+    border-radius: 20px;
+    padding: 1px 5px;
+}
+
+.unexpanded {
+  max-height: 215px;
+  overflow: hidden;
+}

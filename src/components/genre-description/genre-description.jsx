@@ -3,6 +3,7 @@ import AlbumFetch from '../albums/album.fetching';
 import Artist  from '../artists/artist.component';
 import Track  from '../tracks/track.component';
 import './genre-description.component.css';
+import BackRoute from './../ArtistDetails/ArtistDetailsStats.component';
 // import {Album} from '../albums/album.component';
 
  
@@ -11,34 +12,34 @@ class Des extends Component {
     super();
     this.state={
       description :'',
-      isToggleOn: false,
-      isClicked: false,
-      isPressed:false
+      isAlbum: false,
+      track: false,
+      isArtist:false
     };
-    this.handleClick = this.handleClick.bind(this);
-    this.pressedClick = this.pressedClick.bind(this);
-    this.isClick = this.isClick.bind(this);
+    this.getAlbums = this.getAlbums.bind(this);
+    this.getTracks = this.getTracks.bind(this);
+    this.getArtist = this.getArtist.bind(this);
    
   }
 
-  handleClick(){
+  getAlbums(){
     this.setState(state => (
       {
-        isToggleOn: !state.isToggleOn
+        isAlbum: !state.isAlbum
       }
     ));
   }
-  pressedClick(){
+  getTracks(){
     this.setState(state => (
       {
-        isClicked: !state.isClicked
+        track: !state.track
       }
     ));
   }
-  isClick(){
+  getArtist(){
     this.setState(state => (
       {
-        isPressed: !state.isPressed
+        isArtist: !state.isArtist
       }
     ));
   }
@@ -55,14 +56,18 @@ class Des extends Component {
     return (
      
       <div className="App">
-      <h1 className="text-transform">{this.props.match.params.name}</h1>
-      <h3 className="genre-dedscription">{this.state.description}</h3>
-      <button className="tabs-button" onClick={this.handleClick}>Albums</button>
-      {this.state.isToggleOn? <AlbumFetch >{this.props.match.params.name}</AlbumFetch>:null}
-      <button className="tabs-button" onClick={this.pressedClick}>Tracks</button>
-      {this.state.isClicked? <Track>{this.props.match.params.name}</Track>:null}
-      <button className="tabs-button" onClick={this.isClick}>Artists</button>
-      {this.state.isPressed? <Artist>{this.props.match.params.name}</Artist>:null}
+        <BackRoute></BackRoute>
+        <h1 className="text-transform">{this.props.match.params.name}</h1>
+        <h3 className="genre-dedscription">{this.state.description}</h3>
+        <button className="tabs-button active" onClick={this.getAlbums}>Albums</button>
+      
+        <button className="tabs-button" onClick={this.getTracks}>Tracks</button>
+      
+        <button className="tabs-button" onClick={this.getArtist}>Artists</button>
+
+        {this.state.isAlbum? <AlbumFetch >{this.props.match.params.name}</AlbumFetch>:null}
+        {this.state.track? <Track>{this.props.match.params.name}</Track>:null}
+        {this.state.isArtist? <Artist>{this.props.match.params.name}</Artist>:null}
       </div>
       
     );

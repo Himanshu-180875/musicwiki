@@ -27,7 +27,15 @@ componentDidMount(props) {
 
        <div>
       
-      {this.state.tracks.map(track =><h1>{track.name}</h1>)}
+      {this.state.tracks.map(track =>
+        <div class="card-item">
+        <img className="card-image" src={track.image[3]["#text"]}/>
+        <div className="card-middle">
+        <div class="card-text">{track.name}</div>
+        </div>
+        </div>  
+        
+        )}
   
       </div>
       

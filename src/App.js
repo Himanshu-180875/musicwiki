@@ -10,7 +10,7 @@ import './App.css';
 function App(){
   return(
     <switch>
-    <Route exact path='/' component={Gfetching}/>
+    <Route exact path='/musicwiki' component={Gfetching}/>
     <Route exact path='/genre/:name' component ={Des} />
     <Route exact path='/artist/:name' component ={ArtistDetails} />
     <Route exact path='/album/:name/:id' component ={AlbumDetails} />

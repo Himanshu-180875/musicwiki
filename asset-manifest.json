@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/musicwiki/static/css/main.b7f199c6.chunk.css",
-    "main.js": "/musicwiki/static/js/main.d0194425.chunk.js",
-    "main.js.map": "/musicwiki/static/js/main.d0194425.chunk.js.map",
+    "main.js": "/musicwiki/static/js/main.c4423e76.chunk.js",
+    "main.js.map": "/musicwiki/static/js/main.c4423e76.chunk.js.map",
     "runtime-main.js": "/musicwiki/static/js/runtime-main.20b9ae9b.js",
     "runtime-main.js.map": "/musicwiki/static/js/runtime-main.20b9ae9b.js.map",
     "static/js/2.aaa7a61e.chunk.js": "/musicwiki/static/js/2.aaa7a61e.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.20b9ae9b.js",
     "static/js/2.aaa7a61e.chunk.js",
     "static/css/main.b7f199c6.chunk.css",
-    "static/js/main.d0194425.chunk.js"
+    "static/js/main.c4423e76.chunk.js"
   ]
 }

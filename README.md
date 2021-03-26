@@ -31,7 +31,7 @@ npm run start
 **Deployment**
 
 
-the musicwiki web app is created by keeping easy accessibility of users in mind as it is a mobile focused app.it will hence provide a better experience to the users.thereby i am attaching the link for my piece of work.
+The musicwiki web app is created by keeping easy accessibility of users in mind as it is a mobile focused app.it will hence provide a better experience to the users.Thereby i am attaching the link for my piece of work.
 
 https://github.com/Himanshu-180875/musicwiki
 

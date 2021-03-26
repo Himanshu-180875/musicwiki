@@ -16,7 +16,9 @@ React was primarily used to render views in web or mobile applications. It allow
 
 The node_modules directory is not a part of a cloned repository and should be downloaded using the npm install command to download all the direct and transitive dependencies mentioned in the package.json file:
 
-# make sure that you are in the root directory of the project, use" pwd" or "cd" for windows
+** make sure that you are in the root directory of the project, use" pwd" or "cd" for windows**
+
+
 cd RepoName
 npm install
 
